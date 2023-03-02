@@ -1,1 +1,67 @@
-venagbabau paachavav enaammam
+import java.util.Scanner;
+ class B
+{
+    public Object[] a = new Object[10];
+    int c=0;
+    public void add(Object k)
+    {
+       if(c==a.length)
+       {
+        cap();
+       }
+       a[c]=k;
+    c++;
+    }
+    public void cap()
+    {
+        Object[] v=new Object[a.length*2];
+        for(int i=0;i<a.length;i++)
+        {
+            v[i]=a[i];
+        }
+        a=v;
+    }
+    public void dd()
+    {
+        for(Object i:a)
+        {
+            System.out.println(i);
+        }
+    }
+    public Object get(int i)
+    { if(i>=15)
+    {
+        throw new ArrayIndexOutOfBoundsException("welcome");
+    }
+    else{
+
+        return a[i] ;
+    }
+    }
+    
+}
+public class A{
+    public static void main (String[] arge)
+    {
+        B s1=new B();
+        s1.add("babu");
+        s1.add("ravi");
+         s1.add("babu");
+        s1.add("ravi");
+         s1.add("babu");
+        s1.add("ravi");
+         s1.add("babu");
+        s1.add("ravi");
+         s1.add("babu");
+        s1.add("ravi");
+         s1.add("babu");
+        s1.add("ravi");
+        s1.add("babu");
+        s1.add("ravi");
+        s1.add(122);
+        
+        //s1.dd();
+        System.out.println(s1.get(14));
+        
+    }
+}
