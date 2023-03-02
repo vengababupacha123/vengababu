@@ -1,0 +1,65 @@
+<html>
+<head>
+<style>
+.b{background-color:red;
+color:yellow;
+padding: 15px 30px;
+text-align:center;
+font-size:25 px;
+}
+.k{background-color:green;
+color:white;
+}
+
+</style>
+<script>
+function ac()
+{
+document.getElementById("res").value="";
+}
+function show(input)
+{
+
+document.getElementById("res").value+=input;
+}
+function cal()
+{
+var a=eval(document.getElementById("res").value);
+document.getElementById("res").value=a;
+}
+</script>
+</head>
+<body>
+<table border="1" cellspacing="5px" cellpading="5px">
+<caption><h2 class= "k"> SIMPLE CALCULATER</h2></caption>
+<tr>
+<td colspan="3"><input type="text" id="res"></td>
+<td><button class="b" onclicK="ac()">AC</button></td>
+</tr>
+<tr>
+<td align="center"><button class="b" onclicK="show('1')">1</button></td>
+<td align="center"><button class="b" onclicK="show('2')">2</button></td>
+<td align="center"><button class="b" onclicK="show('3')">3</button></td>
+<td align="center"><button class="b" onclicK="show('+')">+</button></td>
+</tr>
+<tr>
+<td align="center"><button class="b" onclicK="show('4')">4</button></td>
+<td align="center"><button class="b" onclicK="show('5')">5</button></td>
+<td align="center"><button class="b" onclicK="show('6')">6</button></td>
+<td align="center"><button class="b" onclicK="show('-')">-</button></td>
+</tr>
+<tr>
+<td align="center"><button class="b" onclicK="show('7')">7</button></td>
+<td align="center"><button class="b" onclicK="show('8')">8</button></td>
+<td align="center"><button class="b" onclicK="show('9')">9</button></td>
+<td align="center"><button class="b" onclicK="show('*')">*</button></td>
+</tr>
+<tr>
+<td align="center"><button class="b" onclicK="show('0')">0</button></td>
+<td align="center"><button class="b" onclicK="show('%')">%</button></td>
+<td align="center"><button class="b" onclicK="show('/')">/</button></td>
+<td align="center"><button class="b" onclicK="cal()">=</button></td>
+</tr>
+</table>
+</body>
+</html>
